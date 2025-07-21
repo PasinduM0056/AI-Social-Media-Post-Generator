@@ -252,7 +252,7 @@ function Workspace() {
             // Fix: Check multiple sources for the API key
             const apiKey = window.REACT_APP_GEMINI_API_KEY || 
                           (typeof process !== 'undefined' && process.env?.REACT_APP_GEMINI_API_KEY) ||
-                          'AIzaSyDJ9R57IEsp7guMwK5Hlb5Z98rcezPDWUI'; // Replace this with your actual API key as a temporary fix
+                          'API_KEY'; // Replace this with your actual API key as a temporary fix
             
             if (!apiKey || apiKey === 'YOUR_API_KEY_HERE') {
                 throw new Error("API key not configured. Please set up your environment variables.");
